@@ -35,6 +35,7 @@ class ProductSerializer(serializers.ModelSerializer):
     quantity_type = QuantitySerializer()
     color_type = ColorSerializer()
     size_type = SizeSerializer()
+    
     class Meta:
         model = Product
         fields = "__all__"
